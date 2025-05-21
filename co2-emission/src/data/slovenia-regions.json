@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Osrednjeslovenska", "emission": 5000 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [14.4, 46.1],
+            [14.6, 46.1],
+            [14.6, 46.3],
+            [14.4, 46.3],
+            [14.4, 46.1]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Podravska", "emission": 4000 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [15.8, 46.4],
+            [16.0, 46.4],
+            [16.0, 46.6],
+            [15.8, 46.6],
+            [15.8, 46.4]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Primorska", "emission": 3000 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [13.6, 45.9],
+            [13.8, 45.9],
+            [13.8, 46.1],
+            [13.6, 46.1],
+            [13.6, 45.9]
+          ]
+        ]
+      }
+    }
+  ]
+}
