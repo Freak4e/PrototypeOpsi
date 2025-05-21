@@ -1,93 +1,91 @@
-# Free React / Next.js landing page template
+# 🇸🇮 Slovenia CO₂ Emissions Dashboard (Prototype)
 
-![Open React / Next.js template preview](https://github.com/user-attachments/assets/522a5e46-2a0e-48ca-80eb-87c7fa58f3ea)
+This repository is a **prototype** for the CO₂ Emissions Dashboard, part of the OŠPI project. It visualizes CO₂ emissions across Slovenia using a dynamic chart and interactive map.
 
-**Open** is a **free React / Next.js landing page template built with Tailwind CSS** for developers/makers who want to create a quick and professional landing page for their open source projects, SaaS products, online services, and more.
+⚠️ **Note:** This is an early-stage prototype and does not represent the final product. The UI, logic, and features will evolve significantly in the final version.
 
-**UPDATE 2025-02-04** Added Tailwind v4 support!
+---
 
-Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
+## 🏁 Getting Started
 
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
-
-_Version 1.0.0 built with the Cruip CSS is available [here](https://github.com/cruip/open-react-template/releases/tag/1.0.0)._
-_Version 2.0.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/open-react-template/releases/tag/2.0.3)._
-_Version 3.3.0 (before redesign) built with Tailwind CSS and Next.js is available [here](https://github.com/cruip/open-react-template/releases/tag/3.3.0)._
-
-## Live demo
-
-Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
-
-## Open PRO
-
-[![Open Pro](https://github.com/user-attachments/assets/2062c728-95f1-4d59-aa2d-d63556f625d5)](https://cruip.com/)
-
-## Design files
-
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/401KSUS
-
-## Usage
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-### Getting Started
-
-First, run the development server:
+To run the project locally:
 
 ```bash
+# Clone the repo
+git clone https://github.com/freak4e/prototypeopsi.git
+cd prototypeopsi
+
+# Navigate to the app directory
+cd co2-emissions
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-pnpm dev (recommended)
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📁 Directory Structure
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The main components are located in:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+/co2-emissions/src/app/
+```
 
-### Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧩 Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. `CO2Chart.tsx`
+- Renders a responsive **line chart** of Slovenia’s CO₂ emissions over time.
+- Built with [Chart.js](https://www.chartjs.org/) via `react-chartjs-2`.
+- Includes basic animations and tooltip interactions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 2. `SloveniaMap.tsx`
+- Displays an **interactive map** of Slovenia using `react-leaflet`.
+- Uses GeoJSON to render regional boundaries.
+- Placeholder styling for now; interactive layers and dynamic data to be added in future versions.
 
-### Deploy on Vercel
+### 3. `Navbar.tsx`
+- A non-functional **navbar UI prototype**.
+- Includes planned tabs for data views like:
+  - By Fuel Type
+  - Per Capita
+  - Regional Comparison
+  - Emission Sources
+  - Sector-wise Distribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+These sections are currently static and will be wired to filters and data views in the full version.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
 
-### Support notes
+## 📦 Dependencies
 
-This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
+Install these via `npm install`:
 
-For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
+```bash
+npm install react-chartjs-2 chart.js react-leaflet leaflet next@latest
+```
 
-## Credits
+> Make sure Leaflet CSS is correctly loaded. This is already handled in the project setup.
 
-- [Nucleo](https://nucleoapp.com/)
+---
 
-## Terms and License
+## 🚧 What's Next
 
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2024 [Cruip](https://cruip.com/).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
+- Replace mock data with real emission datasets.
+- Add filters and interactive dashboard panels.
+- Polish UI with Tailwind transitions and better layouts.
+- Implement proper state management and responsiveness.
+- Deploy final version with API support and CMS (if needed).
 
-## About Us
+---
 
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
+## 👥 Credits
 
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow [@pacovitiello](https://x.com/pacovitiello) and [@DavidePacilio](https://x.com/DavidePacilio) on X, or you can subscribe to our [newsletter](https://cruip.com/newsletter/).
+Made by Konstantin, Anastasija & Matej, 2025.
